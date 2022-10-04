@@ -544,6 +544,7 @@ section.alternate-background {
    #host img {
     width:42%;
     /* padding-right: 10px; */
+    margin-right: 60px;
    }
   
    .para ul{
