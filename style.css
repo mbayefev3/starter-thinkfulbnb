@@ -431,11 +431,12 @@ form button{
     font-size: 20px;
    }
    .para-container{
-    font-size: 20px;
+    font-size: 19px;
    }
 
    .para-container h2{
-    font-size: 24px;
+    font-size: 20px;
+    margin-bottom: 3px;
    }
 
    .para p{
