@@ -1,10 +1,7 @@
 /* -------  General Styles ------- */
 
-body,html {
+body {
   font-family: "Lato", sans-serif;
-  margin: 0;
-  width:100%;
-
 }
 
 h2 {
@@ -44,10 +41,10 @@ main img {
   flex-direction: column;
 }
 
-/* .item {
+.item {
   flex: 1;
   margin: 10px;
-} */
+}
 
 .item-double {
   flex: 2;
@@ -120,153 +117,84 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-header nav ul{
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;;
-}
-
-header nav ul{
-  padding-left:0px;
-}
-header nav ul li:last-child a {
-  /* Removes the margin to the right of the last anchor tag 
-     so that the nav appears centered. */
-  padding-right: 0px;
-}
-
-.container{
-  display: flex;
-  justify-content: space-around;
-}
-
-.container-about{
-  display: flex;
-  flex-direction: column;
-}
-
-/* .container-about{
-  display: flex;
-  flex-direction: column;
-} */
-.container-about img{
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-#ideas img{
-  width:100%;
-}
-
-#host img{
-  width:100%
-}
 
 
-@media all and (min-width: 220px) {
-
-
-  header{
-    padding: 0px;
-  }
-  .logo {
-    padding-top: 10px;
-    font-family: "Pangolin", cursive;
-    font-size:20px;
-    color: #fff;
-  }
-
-#stay h2{
-  font-size: 15px;
-}
-
-  input::placeholder{
-    font-size: 10.5px;
-     }
-     select{
-      font-size: 14px;
-     }
+@media all and (max-width: 479px) {
+ 
+  .logo{
+    font-size:52px;
     
-     label{
-      font-size: 13px;
-     }
-     form input{
-      width:88px;
-      font-size:11px
-      ;
-    
-    } 
-  
-    select{
-      font-size: 11px;
-     }
-
-     form select{
-      width:90px;
-    }
-
-    
-  
-}
-
-
-@media all and (min-width: 350px) {
-
-
-  header{
-    padding: 0px;
-  }
-  .logo {
-    font-family: "Pangolin", cursive;
-    font-size:40px;
-    color: #fff;
   }
 
-  
-  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 14px;;
+  }
+  .input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .about-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-container img{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  #ideas img{
+    width: 100%;
+  }
+
+  #host img{
+    width:100%
+  }
 }
-
-
-
-
 
 
 
 @media all and (min-width: 480px) {
 
-  /* body{
-    box-sizing: border-box;
 
-  } */
-h2{
-  font-size: 18px;
+ 
+  header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+nav ul {
+  display: flex;
+  justify-content: space-around;
 }
- ul#menu a {
-  font-size: 12px;
- margin-top: 10PX;
- 
- }
-  .logo {
-   display: flex;
-   align-items: center;
-    font-family: "Pangolin", cursive;
-    font-size: 30px;
-    color: #fff;
-    margin-bottom: 10px;
-    margin-left: 10px;
-  }
 
-  ul{
-    margin-right: 10px;
-    margin-top: 23px;
-  }
-  header {
-display: flex; 
-justify-content: space-between;
-align-items: center;
-height: 60px;
+
+.logo {
+  display: flex;
+  align-items: center;
+   font-family: "Pangolin", cursive;
+   font-size: 30px;
+   color: #fff;
+   margin-bottom: 10px;
+   margin-left: 10px;
  }
- 
+
+
+ nav ul li {
+  font-size: 10px;
+ }
+ ul{
+   margin-right: 10px;
+   margin-top: 12px;
+   margin-right: 0px;
+ }
+
+
  form{
   display: flex;
   justify-content: space-between;
@@ -274,7 +202,7 @@ height: 60px;
   /* flex-direction: row; */
  } 
  
- .container{
+ .input-container{
   display: flex;
   flex-direction: column;
   margin-top: 10px;
@@ -307,154 +235,124 @@ form button{
   font-size:9px;
 }
 
-#about img{
-  margin-right: 15px;
-  width:25%;
-}
-#about h2{
-  padding-top: 10px;
-  font-size: 12px;
-  margin-left: 60px;
-}
+.about-container img{
 
-.about-container {
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-around; */
-}
-.about-container p {
-  font-size: 7px;
-  width:200px;
+  width:30%;
   margin-right: 10px;
-  margin-top: 20px;
 }
-.ideas-container img{
-  width: 200px;
-} 
-
-#ideas h2{
-  font-size: 13px;
-}
-#ideas h3{
-  font-size: 12px;
-}
-.sub-container{
-  width:700px;
-  margin-left:20px;
-}
-.container-2{
+ .about-container {
   display: flex;
-flex-direction: row;
-} 
+  justify-content: row;
+ }
 
+ /* largern screen increase */
 
+ .about-container p {
+  font-size: 6.3px;
+ }
 
-section.alternate-background {
-  background-color: #00a699;
-  color: #fff;
-  padding: 0px;
-  padding-left: 10px;
-}
- #host .para{
+ .alternate-background{
+  padding-top: 0px;
+ }
+
+ #about h2{
+  font-size: 15px;
+  padding-top: 12px;
+  margin-left: 110px;
+ }
+
+ .para{
   display: flex;
   flex-direction: column;
-  width:250px;
+  justify-content: center;
+ }
 
+
+ .idea-container{
+  display: flex;
+  flex-direction: column;
+  /* margin-right: 10px; */
+ }
+
+ .container img{
+  width:200px;
+ }
+ .container{
+  display: flex;
+  justify-content: space-around;
+ }
+
+ .idea-container h3{
+  font-size: 9px;
  }
 
  #host{
   display: flex;
   justify-content: row;
-  justify-content: space-between;
  }
+.para-container{
+  display: flex;
+  flex-direction: column;
+  font-size: 6px;
+  justify-content: center;
+}
 
- #host{
-  padding-top: 20px;
-  font-size: 8px;
-  padding-bottom: 20px;
-  padding-right: 10px;
- }
- #host img {
-  width:42%;
-  /* padding-right: 10px; */
- }
+.para-container h2{
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+#host.alternate-background{
 
- .para ul{
-  margin-top: 10px;
- }
- .para h2{
-  font-size: 9px;
- }
+  padding-top:15px
+}
 
- .para{
-  padding-top: 50px;
-  padding-bottom: 50px;
- }
-
- .para p{
-  font-size: 7px;
- }
- .para li {
-  font-size:7px ;
- }
+#host img{
+  width: 40%;
+  margin-left: 13px;
+}
 }
 
 
 
-
-@media all  and (min-width: 750px) {
-
-  h2{
-    font-size: 20px;
-  }
-   ul#menu a {
-    font-size: 15px;
-   margin-top: 10PX;
-   
-   }
-    .logo {
-     display: flex;
-     align-items: center;
-      font-family: "Pangolin", cursive;
-      font-size: 30px;
-      color: #fff;
-      margin-bottom: 10px;
-      margin-left: 10px;
-    }
+@media all and (min-width: 720px) {
   
-    ul{
-      margin-right: 10px;
-      margin-top: 23px;
-    }
-    header {
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-   }
-   
-   form{
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 10px 0px 5px ;
-    /* flex-direction: row; */
-   } 
-   
-   .container{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-   }
-  
-    input::placeholder{
+ .about-container p {
+  font-size: 9.2px;
+ }
+
+ .para-container{
+  font-size: 8px;
+ }
+
+ .container img{
+  width:340px;
+ }
+
+ .idea-container h3{
+  font-size: 15px;
+ }
+ .para-container{
+  font-size: 10px;
+ }
+
+ .para-container h2{
+  font-size: 14px;
+ }
+
+ #about h2{
+  margin-left: 180px;
+ }
+
+ 
+ input::placeholder{
   font-size: 12px;
    }
    select{
-    font-size: 13px;
+    font-size: 12px;
    }
   
    label{
-    font-size: 14px;
+    font-size: 12px;
    }
    form input{
     width:100px;
@@ -464,107 +362,86 @@ section.alternate-background {
   } 
   
   form select{
-    width:90px;
+    width:95px;
   }
-  form button{
-    width:70px;
-    margin-top: 10px;
-    padding: 16px 13px 16px 13px;
-    font-size:14px;
+
+  #host img{
+    width:50%;
   }
-  
-  #about img{
-    margin-right: 18px;
-    width:28%;
-  }
-  #about h2{
-    padding-top: 10px;
-    font-size: 14px;
-    margin-left: 15%;
-  }
-  
-  .about-container {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
-  }
-  .about-container p {
-    font-size: 12px;
-    width:80%;
-    margin-right: 10px;
-    margin-top: 60px;
-    margin-bottom: 40px;
-  }
-  .ideas-container img{
-    width: 200px;
-  } 
-  
-  #ideas h2{
-    font-size: 15px;
-  }
-  #ideas h3{
-    font-size: 14px;
-  }
-  .sub-container{
-    width:700px;
-    margin-left:20px;
-  }
-  .container-2{
-    display: flex;
-  flex-direction: row;
-  } 
-  
-  
-  
-  section.alternate-background {
-    background-color: #00a699;
-    color: #fff;
-    padding: 0px;
-    padding-left: 10px;
-  }
-   #host .para{
-    display: flex;
-    flex-direction: column;
-    width:400px;
-  
-   }
-  
-   #host{
-    display: flex;
-    justify-content: row;
-    justify-content: space-between;
-   }
-  
-   #host{
-    padding-top: 20px;
-    font-size: 8px;
-    padding-bottom: 20px;
-    padding-right: 10px;
-   }
-   #host img {
-    width:42%;
-    /* padding-right: 10px; */
-    margin-right: 60px;
-   }
-  
-   .para ul{
-    margin-top: 10px;
-   }
-   .para h2{
-    font-size: 22px;
-   }
-  
-   .para{
-    padding: 10px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-   }
-  
-   .para p{
-    font-size: 15px;
-   }
-   .para li {
-    font-size:12px ;
-   }
 }
+
+
+@media all and (max-width: 280px){
+  input::placeholder{
+    font-size: 10px;
+     }
+     select{
+      font-size: 10px;
+     }
+    
+     label{
+      font-size: 9px;
+     }
+     form input{
+      width:80px;
+      font-size:11px
+      ;
+    
+    } 
+    
+    form select{
+      width:80px;
+    }
+#stay h2{
+  font-size: 18px;
+}
+
+.logo{
+  font-size: 28px;
+}
+}
+
+@media all and (min-width: 1024px){
+
+  
+ .container img{
+  width:400px;
+ }
+ #about h2{
+  font-size: 20px;
+  margin-left: 250px;
+ }
+  
+}
+
+@media all and (min-width: 1280px){
+
+  
+  .container img{
+   width:550px;
+  }
+   
+  .about-container p {
+    font-size: 20px;
+   }
+   .para-container{
+    font-size: 15px;
+   }
+
+   .para-container h2{
+    font-size: 17px;
+   }
+
+   .para p{
+    font-size: 17px;
+   }
+
+   #about h2{
+    font-size: 20px;
+    margin-left: 300px;
+   }
+   
+  #host img{
+    width:40%;
+  }
+ }
