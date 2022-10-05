@@ -431,11 +431,11 @@ form button{
     font-size: 20px;
    }
    .para-container{
-    font-size: 15px;
+    font-size: 20px;
    }
 
    .para-container h2{
-    font-size: 17px;
+    font-size: 24px;
    }
 
    .para p{
@@ -448,6 +448,8 @@ form button{
    }
    
   #host img{
-    width:40%;
+    width:37%;
   }
+
+  
  }
