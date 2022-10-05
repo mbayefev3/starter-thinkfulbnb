@@ -365,6 +365,12 @@ form button{
     width:95px;
   }
 
+  form button{
+    width:70px;
+    margin-top: 10px;
+    padding: 11px 14px 11px 14px;
+    font-size:11px;
+  }
   #host img{
     width:50%;
   }
